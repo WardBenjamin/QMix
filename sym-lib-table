@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name qmix)(type Legacy)(uri ${KIPRJMOD}/qmix.lib)(options "")(descr ""))
+)

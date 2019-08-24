@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:audio-mixer-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -437,8 +438,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 2500 8800 1400
 Connection ~ 8800 1400
-Wire Wire Line
-	8800 1400 9000 1400
 $Comp
 L Device:Opamp_Quad_Generic U?
 U 3 1 5D882926
@@ -848,14 +847,14 @@ RIGHT_1
 $Comp
 L Device:Opamp_Quad_Generic U?
 U 2 1 5D8BEE5F
-P 7900 3600
+P 7900 4700
 AR Path="/5D8BEE5F" Ref="U?"  Part="2" 
 AR Path="/5D81A081/5D8BEE5F" Ref="U7"  Part="2" 
-F 0 "U7" H 7900 3967 50  0000 C CNN
-F 1 "TL074" H 7900 3876 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 3600 50  0001 C CNN
-F 3 "~" H 7900 3600 50  0001 C CNN
-	2    7900 3600
+F 0 "U7" H 7900 5067 50  0000 C CNN
+F 1 "TL074" H 7900 4976 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 4700 50  0001 C CNN
+F 3 "~" H 7900 4700 50  0001 C CNN
+	2    7900 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -927,102 +926,47 @@ F 3 "~" H 3800 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 7100 4100 7100
+	4000 6900 4050 6900
 Wire Wire Line
-	4100 7100 4100 6450
+	4300 6250 4050 6250
 Wire Wire Line
-	4100 6450 4000 6450
-Wire Wire Line
-	4000 7000 4200 7000
-Wire Wire Line
-	4200 7000 4200 6350
-Wire Wire Line
-	4200 6350 4000 6350
-Wire Wire Line
-	4000 6900 4300 6900
-Wire Wire Line
-	4300 6900 4300 6250
-Wire Wire Line
-	4300 6250 4000 6250
-Wire Wire Line
-	4200 6350 4400 6350
-Connection ~ 4200 6350
-Wire Wire Line
-	4100 6450 4400 6450
-Connection ~ 4100 6450
-Connection ~ 4300 6250
-Wire Wire Line
-	3250 7200 3150 7200
-Wire Wire Line
-	3150 7200 3150 6550
-Wire Wire Line
-	3150 6550 3250 6550
-Wire Wire Line
-	3250 7100 3050 7100
-Wire Wire Line
-	3050 7100 3050 6450
-Wire Wire Line
-	3050 6450 3250 6450
-Wire Wire Line
-	3250 7000 2950 7000
-Wire Wire Line
-	2950 7000 2950 6350
-Wire Wire Line
-	2950 6350 3250 6350
-Wire Wire Line
-	3250 6900 2850 6900
-Wire Wire Line
-	2850 6900 2850 6250
-Wire Wire Line
-	2850 6250 3250 6250
-Wire Wire Line
-	2750 6250 2850 6250
-Connection ~ 2850 6250
-Wire Wire Line
-	2950 6350 2750 6350
-Connection ~ 2950 6350
-Wire Wire Line
-	3050 6450 2750 6450
-Connection ~ 3050 6450
-Wire Wire Line
-	3150 7200 3150 7300
-Connection ~ 3150 7200
+	3250 7200 3200 7200
 Wire Wire Line
 	4300 6250 4300 6150
 $Comp
 L power:GND #PWR?
 U 1 1 5D9B1CDC
-P 3150 7300
+P 3200 7300
 AR Path="/5D9B1CDC" Ref="#PWR?"  Part="1" 
 AR Path="/5D81A081/5D9B1CDC" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 3150 7050 50  0001 C CNN
-F 1 "GND" H 3155 7127 50  0000 C CNN
-F 2 "" H 3150 7300 50  0001 C CNN
-F 3 "" H 3150 7300 50  0001 C CNN
-	1    3150 7300
+F 0 "#PWR026" H 3200 7050 50  0001 C CNN
+F 1 "GND" H 3205 7127 50  0000 C CNN
+F 2 "" H 3200 7300 50  0001 C CNN
+F 3 "" H 3200 7300 50  0001 C CNN
+	1    3200 7300
 	1    0    0    -1  
 $EndComp
-Text HLabel 2750 6250 0    50   Input ~ 0
-A0
-Text HLabel 2750 6350 0    50   Input ~ 0
+Text HLabel 3150 6250 0    50   Input ~ 0
+A0_1
+Text HLabel 3150 6350 0    50   Input ~ 0
 SCL
-Text HLabel 2750 6450 0    50   Input ~ 0
+Text HLabel 3150 6450 0    50   Input ~ 0
 SDA
-Text HLabel 4400 6350 2    50   Input ~ 0
-A1
-Text HLabel 4400 6450 2    50   Input ~ 0
-~RESET
+Text HLabel 4100 6350 2    50   Input ~ 0
+A1_1
+Text HLabel 4100 6450 2    50   Input ~ 0
+~RESET_1
 $Comp
 L Device:Opamp_Quad_Generic U?
 U 4 1 5D9B61EF
-P 7900 4700
+P 7900 3600
 AR Path="/5D9B61EF" Ref="U?"  Part="4" 
 AR Path="/5D81A081/5D9B61EF" Ref="U7"  Part="4" 
-F 0 "U7" H 7900 5067 50  0000 C CNN
-F 1 "TL074" H 7900 4976 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 4700 50  0001 C CNN
-F 3 "~" H 7900 4700 50  0001 C CNN
-	4    7900 4700
+F 0 "U7" H 7900 3967 50  0000 C CNN
+F 1 "TL074" H 7900 3876 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 3600 50  0001 C CNN
+F 3 "~" H 7900 3600 50  0001 C CNN
+	4    7900 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1528,4 +1472,48 @@ F 3 "" H 4300 6150 50  0001 C CNN
 	1    4300 6150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8800 1400 9050 1400
+Wire Wire Line
+	4050 6900 4050 6250
+Connection ~ 4050 6250
+Wire Wire Line
+	4050 6250 4000 6250
+Wire Wire Line
+	3200 6550 3200 7200
+Wire Wire Line
+	3200 6550 3250 6550
+Connection ~ 3200 7200
+Wire Wire Line
+	3200 7200 3200 7300
+Wire Wire Line
+	4100 6350 4000 6350
+Wire Wire Line
+	4000 6450 4100 6450
+Wire Wire Line
+	3250 6250 3150 6250
+Wire Wire Line
+	3150 6350 3250 6350
+Wire Wire Line
+	3250 6450 3150 6450
+Text HLabel 3150 6900 0    50   Input ~ 0
+A0_2
+Text HLabel 3150 7000 0    50   Input ~ 0
+SCL
+Text HLabel 3150 7100 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	3250 6900 3150 6900
+Wire Wire Line
+	3150 7000 3250 7000
+Wire Wire Line
+	3250 7100 3150 7100
+Text HLabel 4100 7000 2    50   Input ~ 0
+A1_2
+Text HLabel 4100 7100 2    50   Input ~ 0
+~RESET_2
+Wire Wire Line
+	4100 7000 4000 7000
+Wire Wire Line
+	4000 7100 4100 7100
 $EndSCHEMATC
